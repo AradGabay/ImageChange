@@ -8,6 +8,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textScaleX="1.06"
+        />
+
    <Button
        android:id="@+id/cfn"
        android:onClick="btnclick1"
@@ -54,21 +63,21 @@
             android:layout_height="wrap_content"
             android:onClick="btnclick2"
             android:textStyle="italic|bold"
-            android:text="<"/>
+            android:text="Lower than"/>
         <Button
             android:id="@+id/equalto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="btnclick3"
             android:textStyle="bold|italic"
-            android:text="="/>
+            android:text="Equal to"/>
         <Button
             android:id="@+id/greaterthan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="btnclick4"
             android:textStyle="bold|italic"
-            android:text=">"/>
+            android:text="Greater than"/>
 
 </LinearLayout>
 
@@ -78,19 +87,12 @@
 
 
 
-    <TextView
-        android:id="@+id/wronganswer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wrong answers:"
-        android:textSize="35dp"
-        android:textStyle="italic|bold"
-        android:textColor="#ff0000"/>
+
     <TextView
         android:id="@+id/rightanswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Right answers:"
+        android:text="Score:"
         android:textStyle="italic|bold"
         android:textColor="#00ff00"
         android:textSize="35dp"/>
